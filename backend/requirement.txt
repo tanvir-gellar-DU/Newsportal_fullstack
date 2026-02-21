@@ -1,0 +1,11 @@
+Token-Based Authentication (JWT)
+Object-Relational Mapping (ORM) (Sequelize)
+Database Migrations (Sequelize CLI)
+Environment Variables (
+
+.env
+ Usage)
+Database Seeders (Mocking/Dummy Data generation via Sequelize)
+RESTful API Design
+Request Validation (Express Validator)
+Separation of Concerns (MVC Architecture)
