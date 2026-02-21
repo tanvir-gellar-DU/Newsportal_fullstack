@@ -24,4 +24,13 @@ router.put('/:id', [
 
 router.delete('/:id', auth, newsController.deleteNews);
 
+const commentController = require('../controllers/commentController');
+
+router.get('/:id/comments', commentController.getCommentsByNews);
+router.post('/:id/comments', [
+    auth,
+    check('content', 'Content is required').not().isEmpty(),
+    validate
+], commentController.addComment);
+
 module.exports = router;
